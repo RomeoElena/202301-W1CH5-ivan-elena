@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sass": "sass sass:css --watch"
   },
   "keywords": [
     "challenge"
@@ -13,6 +14,7 @@
   "author": "Ivan Elena",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "sass": "^1.57.1"
   }
 }
