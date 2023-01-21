@@ -77,4 +77,57 @@ h6 {
   isolation: isolate;
 }
 
+body section:first-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 16px 100px;
+  gap: 100px;
+  width: 320px;
+  height: 1210px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background-position: left center;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+.title .title__logo-text {
+  height: 18.64px;
+}
+.title .title__logo {
+  width: 24.36px;
+}
+
+.popular-destinations__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title-separation {
+  border-top: 2px solid #ff7757;
+  max-width: 227px;
+  margin-left: 1rem;
+}
+
 /*# sourceMappingURL=style.css.map */
