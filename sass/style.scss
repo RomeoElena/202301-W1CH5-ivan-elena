@@ -11,6 +11,14 @@
   margin-bottom: 1rem;
 }
 
+@mixin auto-layer {
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0;
+  padding: 0;
+}
 // @mixin section-description {
 // }
 
@@ -126,12 +134,17 @@ header {
 }
 
 .title {
+  color: #ffffff;
   display: flex;
   align-items: center;
   .title__logo-text {
+    color: #ffffff;
+
     height: 18.64px;
   }
   .title__logo {
+    color: #ffffff;
+
     width: 24.36px;
   }
 }
@@ -144,4 +157,71 @@ header {
   border-top: 2px solid $primary-color;
   max-width: 227px;
   margin-left: 1rem;
+}
+
+.booking-form__title {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 53px;
+
+  color: #ffffff;
+}
+.booking-form {
+  &__info {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 6rem;
+    color: #ffffff;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    width: 288px;
+    height: 595px;
+    background: #ffffff;
+    border-radius: 16px;
+    label {
+      @include auto-layer();
+      height: 14px;
+      margin-left: 15px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 14px;
+      /* identical to box height */
+      text-transform: uppercase;
+      color: #767e86;
+    }
+    input {
+      @include auto-layer();
+      appearance: none;
+      border: 0;
+      // padding: 1rem;
+      border-bottom: 1px solid #000000;
+    }
+  }
+
+  &__button-submit {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 12px;
+
+    width: 288px;
+    height: 128px;
+
+    background: #ff7757;
+    border-radius: 0px 0px 16px 16px;
+  }
 }
