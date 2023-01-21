@@ -24,18 +24,23 @@
     <main class="booking-form">
       <h2 class="booking-form__title">Start your unforgettable journey with us</h2>
       <p class="booking-form__info">The best travel for your journey begins now</p>
+      <section class="booking-form__fields"></section>
       <form action="#" class="booking-form__form">
-        <label for="destination">Destination</label>
-        <input type="text" name="destination" id="destination" class="booking-form__input-text" placeholder="Dubai">
-        <label for="person">Person</label>
-        <input type="text" name="person" id="person" class="booking-form__input-text" placeholder="2">
-        <label for="checkin">Check-in</label>
-        <input type="text" name="checkin" id="checkin" class="booking-form__input-text"
+        <ul>
+          <li><label for="destination">Destination</label>
+            <input type="text" name="destination" id="destination" class="booking-form__input-text" placeholder="Dubai">
+          </li>
+          <li><label for="person">Person</label>
+            <input type="text" name="person" id="person" class="booking-form__input-text" placeholder="2">
+          </li>
+          <li><label for="checkin">Check-in</label>
+            <input type="text" name="checkin" id="checkin" class="booking-form__input-text">
+          </li>
           placeholder="Sun, 17th Sep 2020">
-        <label for="checkout">Check-out</label>
-        <input type="text" name="checkout" id="checkout" class="booking-form__input-text"
-          placeholder="Tue, 17th Oct 2020">
-
+          <label for="checkout">Check-out</label>
+          <input type="text" name="checkout" id="checkout" class="booking-form__input-text"
+            placeholder="Tue, 17th Oct 2020">
+        </ul>
         <input type="button" value="Book now" class="booking-form__button-submit">
 
       </form>

@@ -190,7 +190,7 @@ header {
   border: 0;
   border-bottom: 1px solid #000000;
 }
-.booking-form__button-submit {
+.booking-form __button-submit {
   width: 100%;
   display: flex;
   flex-direction: row;
