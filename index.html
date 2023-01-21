@@ -19,15 +19,24 @@
     <main class="booking-form">
       <h1 class="booking-form__title"></h1>
       <p class="booking-form__info"></p>
-      <form action="" class="booking-form__form"></form>
+      <form action="" class="booking-form__form">
+
+
+      </form>
     </main>
   </div>
   <section class="popular-destinations">
     <h2 class="popular-destinations__title"></h2>
     <p class="popular-destinations__info"></p>
-    <div class="popular-destinations__div"><img src="" alt="" class="popular-destinations__image"></div>
-    <nav class="popular-destinations__nav"><a href="" class="popular-destinations__button"></a><a href=""
-        class="popular-destinations__button"></a></nav>
+    <div class="popular-destinations__div">
+      <img src="" alt="" class="popular-destinations__image">
+      <h3 class="popular-destinations__image-title"></h3>
+      <p class="popular-destinations__image-location"></p>
+    </div>
+    <nav class="popular-destinations__nav">
+      <a href="" class="popular-destinations__button"></a>
+      <a href="" class="popular-destinations__button"></a>
+    </nav>
   </section>
   <section class="special-offer">
     <h2 class="special-offer__title"></h2>
@@ -36,18 +45,26 @@
     <div class="special-offer__info">
       <h3 class="special-offer__destination"></h3>
       <p class="special-offer__destination-info"></p>
-      <p class="special-offer__price"><span></span><a href="" class="special-offer__details"></a></p>
-      <nav class="special-offer__nav"><a href="" class="special-offer__next"></a><a href=""
-          class="special-offer__next"></a></nav>
+      <p class="special-offer__price">From <span>€500</span></p>
+      <a href="" class="special-offer__details"></a>
+
+      <nav class="special-offer__nav">
+        <a href="" class="special-offer__button"></a>
+        <a href="" class="special-offer__button"></a>
+      </nav>
     </div>
   </section>
+
   <section class="our-blog">
     <h2 class="our-blog__title"></h2>
     <p class="our-blog__info"></p>
     <img src="" alt="" class="our-blog__image">
     <h3 class="our-blog__post-title"></h3>
     <p class="our-blog__post"></p>
-    <div><a href="" class="our-blog__read-more"></a><img src="" alt="" class="our-blog__arrow"></div>
+    <div>
+      <a href="" class="our-blog__read-more"></a>
+      <img src="" alt="" class="our-blog__arrow">
+    </div>
   </section>
   <section class="trip-planners">
     <h2 class="trip-planners__title"></h2>
@@ -107,27 +124,30 @@
     <p class="travelers-experiences__info"></p>
     <div class="testiomony">
       <img src="" alt="" class="testimony_user-image">
-      <blockquote class="testimony__text"></blockquote>
+      <quote class="testimony__text"></quote>
       <img src="" alt="" class="testimony__stars">
       <h4 class="testimony__user"></h4>
       <p class="testimony__user-job"></p>
     </div>
-    <nav class="travelers-experiences__nav"><a href="" class="travelers-experiences__next"></a><a href=""
-        class="travelers-experiences__next"></a></nav>
+    <nav class="travelers-experiences__nav"><a href="" class="travelers-experiences__button"></a><a href=""
+        class="travelers-experiences__button"></a></nav>
   </section>
   <section class="newsletter">
     <h2 class="newsletter__title"></h2>
     <form action="" class="newsletter-form">
-      <label for="" name="email">
-        <p class="newsletter-form__email"></p>
-      </label><input type="text" id="email" placeholder="Enter your email" class="newsletter-form__email"><input
-        type="button" class="newsletter-form__button">
+      <label for="email" name="email">Email</label>
+      <input type="text" name="email" id="email" placeholder="Enter your email" class="newsletter-form__email">
+      <input type="button" class="newsletter-form__button">Suscribe
     </form>
   </section>
+
   <footer>
-    <h1 class="footer-title"><img src="" alt="" class="footer-title__logo"><small class="footer-title__license"></small>
+    <h1 class="footer-title">
+      <img src="" alt="" class="footer-title__logo">
+      <img src="" alt="" class="footer-title__logo-text">
+      <small class="footer-title__license"></small>
     </h1>
-    <nav class="footer-navs">
+    <nav class="nav-menu">
       <h2 class="nav-menu__title"></h2>
       <ul class="nav-menu__list">
         <li class="nav-menu__link1"></li>
@@ -136,6 +156,9 @@
         <li class="nav-menu__link4"></li>
         <li class="nav-menu__link5"></li>
       </ul>
+    </nav>
+
+    <nav class="nav-information">
       <h2 class="nav-information__title"></h2>
       <ul class="nav-information_list">
         <li class="nav-information__link1"></li>
@@ -143,18 +166,22 @@
         <li class="nav-information__link3"></li>
         <li class="nav-information__link4"></li>
       </ul>
-      <adress class="contact-info">
-        <h2 class="contact-info__title"></h2>
-        <a href="+123 456 789" class="contact-info__phone"></a><a href="mailto: info@travellian.com"
-          class="contact-info__email"></a><a href="" class="contact-info__adress"></a>
-      </adress>
-      <div class="follow-us">
-        <h2 class="follow-us__title"></h2>
-        <div class="follow-us-icons"><img src="" alt="" class="follow-us-icons__facebook"><img src="" alt=""
-            class="follow-us-icons__pinterest"><img src="" alt="" class="follow-us-icons__instagram"><img src="" alt=""
-            class="follow-us-icons__twitter"></div>
-      </div>
     </nav>
+    <adress class="contact-info">
+      <h2 class="contact-info__title"></h2>
+      <a href="+123 456 789" class="contact-info__phone">+123 456 789</a>
+      <a href="mailto: info@travellian.com" class="contact-info__email">info@travellian.com</a>
+      <a href="" class="contact-info__adress">1245, New Yourk, USA</a>
+    </adress>
+    <div class="follow-us">
+      <h2 class="follow-us__title"></h2>
+      <div class="follow-us-icons">
+        <img src="images/facebook-icon.svg" alt="" class="follow-us-icons__facebook">
+        <img src="images/pinterest-icon.svg" alt="" class="follow-us-icons__pinterest">
+        <img src="images/instagram-icon.svg" alt="" class="follow-us-icons__instagram">
+        <img src="images/twitter-icon.svg" alt="" class="follow-us-icons__twitter">
+      </div>
+    </div>
   </footer>
 </body>
 
