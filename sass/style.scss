@@ -33,7 +33,6 @@
   padding: 0;
 }
 
-
 @mixin section-description {
   width: 288px;
   height: 105px;
@@ -50,7 +49,7 @@
   color: #767e86;
 }
 
-@mixin img-format {
+@mixin img-format($url) {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -64,7 +63,7 @@
       rgba(255, 119, 87, 0.5),
       rgba(255, 119, 87, 0.1)
     ),
-    url(anthony-reungere-sjUufQqEnHI-unsplash.jpg);
+    $url;
   object-fit: cover;
 }
 
@@ -212,6 +211,7 @@ header {
 h2 {
   @include section-titles();
 }
+
 .title {
   color: #ffffff;
   display: flex;
@@ -226,10 +226,6 @@ h2 {
 
     width: 24.36px;
   }
-}
-
-.popular-destinations__title {
-  @include section-titles();
 }
 
 .trip-planners__info {
@@ -248,7 +244,27 @@ h2 {
   width: fit-content;
   padding: 5px;
 }
+.special-offer {
+  &__description {
+    @include section-description();
+  }
+  &__img {
+    @include img-format(url(../images/lisbon.jpg));
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff8f1;
+    border-radius: 16px 16px 0 0;
+    height: fit-content;
+  }
+}
 
+.our-blog__info {
+  @include section-description();
+}
 .aligne-button {
   display: flex;
   justify-content: center;
@@ -453,7 +469,6 @@ p {
   color: #172432;
 }
 
-
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -471,6 +486,7 @@ p {
 
   &__info {
     font-family: "Rubik", sans-serif;
+    width: 100%;
     font-style: normal;
     font-weight: 200;
     font-size: 18px;
@@ -494,22 +510,17 @@ p {
     border-radius: 16px;
   }
   &__button-submit {
-    margin-top: 1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 40px 20px;
     font-family: "Playfair Display";
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    line-height: 48px;
     color: #ffffff;
     gap: 12px;
-    width: 288px;
-    height: 128px;
-    background: #ff7757;
-    border-radius: 0px 0px 16px 16px;
+    width: 100%;
+    background: transparent;
     border: none;
   }
   &__input-text {
@@ -538,32 +549,59 @@ p {
     line-height: 19px;
     color: #172432;
   }
-}
-.booking-form__form {
-  display: flex;
-  flex-direction: column;
-  gap: 0px;
-
-  ul {
-    width: 288px;
-
+  .booking-form__form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 1rem;
-    padding-left: 0;
-    gap: 60px;
+    gap: 0px;
 
-    background: #ffffff;
-    border-radius: 16px;
-    li {
+    ul {
+      width: 288px;
+
       display: flex;
       flex-direction: column;
-      justify-items: space-between;
+      justify-content: center;
       align-items: flex-start;
-      gap: 0.5rem;
-      padding-left: 1rem;
+      padding-top: 1rem;
+      padding-left: 0;
+      gap: 60px;
+
+      background: #ffffff;
+      border-radius: 16px;
+      // div {
+      //   display: flex;
+      //   justify-content: space-between;
+      // }
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-items: space-between;
+        align-items: flex-start;
+        gap: 0.5rem;
+        padding-left: 1rem;
+      }
+      li:last-child {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 40px 20px;
+        font-family: "Playfair Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+        color: #ffffff;
+        gap: 12px;
+        width: 288px;
+        height: 128px;
+        background: #ff7757;
+        border-radius: 0px 0px 16px 16px;
+        border: none;
+      }
     }
   }
 }
@@ -578,11 +616,59 @@ p {
   &__div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem;
+    justify-content: flex-start;
+    position: relative;
+    span {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
   }
+
   &__image {
-    @include img-format();
+    @include img-format(url(../images/berlin.jpg));
+  }
+
+  &__text-over-image {
+    position: absolute;
+    z-index: 1;
+    top: 14rem;
+    bottom: 0;
+    left: 3rem;
+    right: 0;
+  }
+
+  &__image-title {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 1rem;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  &__location-icon {
+    width: 16.88px;
+    color: #ffffff;
+  }
+  &__image-location {
+    width: 208px;
+    height: 21px;
+
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #ffffff;
   }
   &__nav {
     display: flex;
