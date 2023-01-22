@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&display=swap");
+
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -83,13 +85,16 @@ body main {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 16px 100px;
+
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
+
   background-position: left -110px top -1130px;
   object-fit: contain;
+
 }
 
 header {
@@ -132,7 +137,7 @@ h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 53px;
-  color: #172432;
+  color: #172432; 
   margin-top: 5rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -141,10 +146,12 @@ h2 {
 .trip-planners__info {
   width: 288px;
   height: 105px;
+
   padding-top: 1.5rem;
   padding-bottom: 5rem;
   margin-bottom: 5rem;
   padding-left: 1rem;
+
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -156,6 +163,7 @@ h2 {
 .travelers-experiences__info {
   width: 288px;
   height: 105px;
+
   padding-top: 1.5rem;
   padding-bottom: 5rem;
   margin-bottom: 5rem;
@@ -172,6 +180,7 @@ h2 {
   display: flex;
   align-items: center;
   background-color: #ff7757;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 5px;
 }
@@ -180,6 +189,14 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+
+.city1__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 
 .city1__activity {
   display: flex;
@@ -206,6 +223,12 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
 }
 
 .city1__name {
@@ -219,6 +242,7 @@ h2 {
   color: #172432;
 }
 
+
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -227,6 +251,158 @@ h2 {
 }
 .booking-form__title {
   margin: 0;
+=======
+.city2__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.city2__activity {
+  display: flex;
+  width: 117px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #172432;
+}
+
+.city2__price {
+  width: 76px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
+}
+
+.city2__name {
+  width: 193px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
+}
+
+.city3__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.city3__activity {
+  display: flex;
+  width: 117px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #172432;
+}
+
+.city3__price {
+  width: 76px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
+  width: 94px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+}
+
+.city3__name {
+  width: 255px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
+}
+
+.city4__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.city4__activity {
+  display: flex;
+  width: 117px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #172432;
+}
+
+.city4__price {
+  width: 76px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
+}
+
+.city4__name {
+  width: 246px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
+}
+
+.booking-form__title {
+
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
@@ -256,7 +432,9 @@ h2 {
   border-radius: 16px;
 }
 .booking-form__button-submit {
+
   margin-top: 1rem;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -311,6 +489,7 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
   padding-top: 1rem;
   padding-left: 0;
   gap: 60px;
@@ -492,3 +671,4 @@ h2 {
 }
 
 /*# sourceMappingURL=style.css.map */
+

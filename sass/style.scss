@@ -33,6 +33,7 @@
   padding: 0;
 }
 
+
 @mixin section-description {
   width: 288px;
   height: 105px;
@@ -243,6 +244,7 @@ h2 {
   display: flex;
   align-items: center;
   background-color: $primary-color;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 5px;
 }
@@ -252,6 +254,12 @@ h2 {
   justify-content: center;
 }
 
+.city1__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 .city1__activity {
   display: flex;
 }
@@ -259,14 +267,12 @@ h2 {
 .city1__activity {
   width: 117px;
   height: 21px;
-
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   text-transform: uppercase;
-
   color: #172432;
 }
 
@@ -279,6 +285,12 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
 }
 
 .city1__name {
@@ -291,6 +303,156 @@ h2 {
   line-height: 37px;
   color: #172432;
 }
+
+.city2__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.city2__activity {
+  display: flex;
+  width: 117px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #172432;
+}
+
+.city2__price {
+  width: 76px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
+}
+
+.city2__name {
+  width: 193px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
+}
+
+.city3__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.city3__activity {
+  display: flex;
+  width: 117px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #172432;
+}
+
+.city3__price {
+  width: 76px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
+  width: 94px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+}
+
+.city3__name {
+  width: 255px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
+}
+
+.city4__info {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.city4__activity {
+  display: flex;
+  width: 117px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #172432;
+}
+
+.city4__price {
+  width: 76px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+  display: flex;
+  align-content: space-between;
+}
+
+p {
+  display: flex;
+}
+
+.city4__name {
+  width: 246px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
+}
+
 
 .booking-form {
   display: flex;
