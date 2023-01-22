@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Rubik:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&display=swap");
+
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -83,16 +85,16 @@ body main {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 16px 100px;
-  gap: 100px;
-  width: 320px;
-  height: hug();
+
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
-  background-position: left center;
-  object-fit: cover;
+
+  background-position: left -110px top -1130px;
+  object-fit: contain;
+
 }
 
 header {
@@ -100,7 +102,19 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  padding: 2.2rem 2rem;
+}
+
+h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
 }
 
 .title {
@@ -123,7 +137,8 @@ header {
   font-weight: 400;
   font-size: 40px;
   line-height: 53px;
-  color: #172432;
+  color: #172432; 
+  margin-top: 5rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
@@ -131,6 +146,12 @@ header {
 .trip-planners__info {
   width: 288px;
   height: 105px;
+
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -142,6 +163,11 @@ header {
 .travelers-experiences__info {
   width: 288px;
   height: 105px;
+
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -164,11 +190,13 @@ header {
   justify-content: center;
 }
 
+
 .city1__info {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
+
 
 .city1__activity {
   display: flex;
@@ -214,6 +242,16 @@ p {
   color: #172432;
 }
 
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.booking-form__title {
+  margin: 0;
+=======
 .city2__info {
   display: flex;
   justify-content: space-between;
@@ -364,6 +402,7 @@ p {
 }
 
 .booking-form__title {
+
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
@@ -393,7 +432,9 @@ p {
   border-radius: 16px;
 }
 .booking-form__button-submit {
-  width: 100%;
+
+  margin-top: 1rem;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -403,19 +444,38 @@ p {
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
-  /* identical to box height */
   color: #ffffff;
   gap: 12px;
   width: 288px;
   height: 128px;
   background: #ff7757;
   border-radius: 0px 0px 16px 16px;
+  border: none;
 }
 .booking-form__input-text {
   appearance: none;
   outline: none;
   border: none;
   border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+.booking-form__label {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  opacity: 90%;
+  color: #767e86;
+}
+.booking-form__input-text::placeholder {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #172432;
 }
 
 .booking-form__form {
@@ -424,14 +484,15 @@ p {
   gap: 0px;
 }
 .booking-form__form ul {
+  width: 288px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
+
+  padding-top: 1rem;
+  padding-left: 0;
   gap: 60px;
-  width: 288px;
-  height: 595px;
   background: #ffffff;
   border-radius: 16px;
 }
@@ -442,6 +503,171 @@ p {
   align-items: flex-start;
   gap: 0.5rem;
   padding-left: 1rem;
+}
+
+.popular-destinations__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.popular-destinations__info {
+  width: 288px;
+  height: 105px;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+.popular-destinations__div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.popular-destinations__image {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(anthony-reungere-sjUufQqEnHI-unsplash.jpg);
+  object-fit: cover;
+}
+.popular-destinations__nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.popular-destinations__previous-button {
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 20px;
+  color: white;
+  gap: 4px;
+  width: 60px;
+  height: 66px;
+  background-color: #331811;
+  border-radius: 12px;
+}
+.popular-destinations__next-button {
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 20px;
+  color: white;
+  gap: 4px;
+  width: 60px;
+  height: 66px;
+  background-color: #ff7757;
+  border-radius: 12px;
+}
+
+.title-separation {
+  border-top: 2px solid #ff7757;
+  max-width: 227px;
+  margin-left: 1rem;
+}
+
+.trip-planners__info {
+  width: 288px;
+  height: 105px;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+
+.travelers-experiences__info {
+  width: 288px;
+  height: 105px;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+
+.trip-planners__all-trips {
+  display: flex;
+  align-items: center;
+  background-color: #ff7757;
+  width: fit-content;
+  padding: 5px;
+}
+
+.aligne-button {
+  display: flex;
+  justify-content: center;
+}
+
+.city1__activity {
+  display: flex;
+}
+
+.city1__activity {
+  width: 117px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #172432;
+}
+
+.city1__price {
+  width: 75px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+}
+
+.city1__name {
+  width: 201px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
 }
 
 /*# sourceMappingURL=style.css.map */
