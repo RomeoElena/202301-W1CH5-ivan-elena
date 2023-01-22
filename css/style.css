@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&display=swap");
-
-
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -85,16 +83,13 @@ body main {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 16px 100px;
-
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
-
   background-position: left -110px top -1130px;
   object-fit: contain;
-
 }
 
 header {
@@ -137,33 +132,26 @@ h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 53px;
-  color: #172432; 
+  color: #172432;
   margin-top: 5rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
+.trip-planners__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
 .trip-planners__info {
   width: 288px;
   height: 105px;
-
-  padding-top: 1.5rem;
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
-  padding-left: 1rem;
-
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #767e86;
-}
-
-.travelers-experiences__info {
-  width: 288px;
-  height: 105px;
-
   padding-top: 1.5rem;
   padding-bottom: 5rem;
   margin-bottom: 5rem;
@@ -175,8 +163,7 @@ h2 {
   line-height: 21px;
   color: #767e86;
 }
-
-.trip-planners__all-trips {
+.trip-planners__trips {
   display: flex;
   align-items: center;
   background-color: #ff7757;
@@ -185,18 +172,31 @@ h2 {
   padding: 5px;
 }
 
+.travelers-experiences__info {
+  width: 288px;
+  height: 105px;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+
 .aligne-button {
   display: flex;
   justify-content: center;
 }
-
 
 .city1__info {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }
-
 
 .city1__activity {
   display: flex;
@@ -242,16 +242,6 @@ p {
   color: #172432;
 }
 
-
-.booking-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-.booking-form__title {
-  margin: 0;
-=======
 .city2__info {
   display: flex;
   justify-content: space-between;
@@ -401,8 +391,14 @@ p {
   color: #172432;
 }
 
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 .booking-form__title {
-
+  margin: 0;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
@@ -432,9 +428,7 @@ p {
   border-radius: 16px;
 }
 .booking-form__button-submit {
-
   margin-top: 1rem;
-
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -489,7 +483,6 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-
   padding-top: 1rem;
   padding-left: 0;
   gap: 60px;
@@ -544,7 +537,7 @@ p {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(anthony-reungere-sjUufQqEnHI-unsplash.jpg);
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/berlin.jpg);
   object-fit: cover;
 }
 .popular-destinations__nav {
@@ -587,21 +580,6 @@ p {
   border-top: 2px solid #ff7757;
   max-width: 227px;
   margin-left: 1rem;
-}
-
-.trip-planners__info {
-  width: 288px;
-  height: 105px;
-  padding-top: 1.5rem;
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
-  padding-left: 1rem;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #767e86;
 }
 
 .travelers-experiences__info {
@@ -670,5 +648,78 @@ p {
   color: #172432;
 }
 
-/*# sourceMappingURL=style.css.map */
+.city1__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/rome.jpg);
+  object-fit: cover;
+}
 
+.city2__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/paris.jpg);
+  object-fit: cover;
+}
+
+.city3__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/paris.jpg);
+  object-fit: cover;
+}
+
+.city4__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/budapest.jpg);
+  object-fit: cover;
+}
+
+.travelers-experiences__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.travelers-experiences__info {
+  width: 288px;
+  height: 105px;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+
+/*# sourceMappingURL=style.css.map */

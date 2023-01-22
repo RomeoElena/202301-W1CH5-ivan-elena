@@ -15,13 +15,11 @@
 @mixin section-description {
   width: 288px;
   height: 105px;
-
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
   color: #767e86;
 }
 @mixin auto-layer {
@@ -32,7 +30,6 @@
   margin: 0;
   padding: 0;
 }
-
 
 @mixin section-description {
   width: 288px;
@@ -46,11 +43,10 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-
   color: #767e86;
 }
 
-@mixin img-format {
+@mixin img-format($img) {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -64,7 +60,8 @@
       rgba(255, 119, 87, 0.5),
       rgba(255, 119, 87, 0.1)
     ),
-    url(anthony-reungere-sjUufQqEnHI-unsplash.jpg);
+    $img;
+
   object-fit: cover;
 }
 
@@ -232,21 +229,25 @@ h2 {
   @include section-titles();
 }
 
-.trip-planners__info {
-  @include section-description();
+.trip-planners {
+  &__title {
+    @include section-titles();
+  }
+  &__info {
+    @include section-description();
+  }
+  &__trips {
+    display: flex;
+    align-items: center;
+    background-color: $primary-color;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 5px;
+  }
 }
 
 .travelers-experiences__info {
   @include section-description();
-}
-
-.trip-planners__all-trips {
-  display: flex;
-  align-items: center;
-  background-color: $primary-color;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px;
 }
 
 .aligne-button {
@@ -453,7 +454,6 @@ p {
   color: #172432;
 }
 
-
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -582,7 +582,7 @@ p {
     justify-content: center;
   }
   &__image {
-    @include img-format();
+    @include img-format(url(../images/berlin.jpg));
   }
   &__nav {
     display: flex;
@@ -603,9 +603,6 @@ p {
   border-top: 2px solid $primary-color;
   max-width: 227px;
   margin-left: 1rem;
-}
-.trip-planners__info {
-  @include section-description();
 }
 
 .travelers-experiences__info {
@@ -663,4 +660,37 @@ p {
   font-size: 28px;
   line-height: 37px;
   color: #172432;
+}
+
+.city1 {
+  &__img {
+    @include img-format(url(../images/rome.jpg));
+  }
+}
+
+.city2 {
+  &__img {
+    @include img-format(url(../images/paris.jpg));
+  }
+}
+
+.city3 {
+  &__img {
+    @include img-format(url(../images/paris.jpg));
+  }
+}
+
+.city4 {
+  &__img {
+    @include img-format(url(../images/budapest.jpg));
+  }
+}
+
+.travelers-experiences {
+  &__title {
+    @include section-titles();
+  }
+  &__info {
+    @include section-description();
+  }
 }
