@@ -12,6 +12,19 @@
   margin-bottom: 1rem;
 }
 
+ feature/mobile-first
+@mixin section-description {
+  width: 288px;
+  height: 105px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #767e86;
+}
 @mixin auto-layer {
   flex: none;
   order: 2;
@@ -20,6 +33,7 @@
   margin: 0;
   padding: 0;
 }
+
 
 @mixin section-description {
   width: 288px;
@@ -88,6 +102,7 @@
 
   border-radius: 12px;
 }
+
 
 $primary-color: #ff7757;
 $primary-color-soft: #ffd2c7;
@@ -216,6 +231,74 @@ h2 {
     width: 24.36px;
   }
 }
+
+
+.popular-destinations__title {
+  @include section-titles();
+}
+
+.trip-planners__info {
+  @include section-description();
+}
+
+.travelers-experiences__info {
+  @include section-description();
+}
+
+.trip-planners__all-trips {
+  display: flex;
+  align-items: center;
+  background-color: $primary-color;
+  width: fit-content;
+  padding: 5px;
+}
+
+.aligne-button {
+  display: flex;
+  justify-content: center;
+}
+
+.city1__activity {
+  display: flex;
+}
+
+.city1__activity {
+  width: 117px;
+  height: 21px;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  color: #172432;
+}
+
+.city1__price {
+  width: 75px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #172432;
+}
+
+.city1__name {
+  width: 201px;
+  height: 37px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 37px;
+  color: #172432;
+}
+
+
 .booking-form {
   &__title {
     font-style: normal;
