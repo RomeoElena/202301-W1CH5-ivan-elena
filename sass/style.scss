@@ -205,21 +205,27 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2.2rem 2rem;
+  padding-bottom: 10rem;
 }
 h2 {
   @include section-titles();
 }
-
+.menu-list,
+.login {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
 .title {
   color: #ffffff;
   display: flex;
   align-items: center;
-  .title__logo-text {
+  &__logo-text {
     color: #ffffff;
 
     height: 18.64px;
   }
-  .title__logo {
+  &__logo {
     color: #ffffff;
 
     width: 24.36px;
@@ -764,4 +770,101 @@ p {
   &__info {
     @include section-description();
   }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    grid-area: 1 / 1 /2 /2;
+
+    &__logo-text {
+      color: #ffffff;
+      min-height: 34.2px;
+      min-width: 186.77px;
+    }
+    &__logo {
+      color: #ffffff;
+
+      width: 40.72px;
+    }
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 2rem;
+  }
+
+  .nav-menu {
+    grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login {
+    grid-area: 1/2/2/3;
+    visibility: visible;
+    justify-self: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    li {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+  }
+
+  .menu-list {
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1/2/2;
+    visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    li {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      /* identical to box height */
+
+      color: #ffffff;
+    }
+  }
+
+  .nav-menu__burger {
+    visibility: hidden;
+  }
+
+  body {
+    main {
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url(../images/background.jpg);
+      // scale: crop;
+
+      /* Inside auto layout */
+
+      background-position: center top -1400px;
+      object-fit: cover;
+    }
+  }
+}
+.booking-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }

@@ -83,8 +83,7 @@ body main {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 16px 100px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(../images/background.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
   /* Inside auto layout */
   flex: none;
   order: 0;
@@ -99,6 +98,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2.2rem 2rem;
+  padding-bottom: 10rem;
 }
 
 h2 {
@@ -113,30 +113,25 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.menu-list,
+.login {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
 .title {
   color: #ffffff;
   display: flex;
   align-items: center;
 }
-.title .title__logo-text {
+.title__logo-text {
   color: #ffffff;
   height: 18.64px;
 }
-.title .title__logo {
+.title__logo {
   color: #ffffff;
   width: 24.36px;
-}
-
-.popular-destinations__title {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 53px;
-  color: #172432;
-  margin-top: 5rem;
-  margin-left: 1rem;
-  margin-bottom: 1rem;
 }
 
 .trip-planners__title {
@@ -186,46 +181,6 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
-}
-
-.special-offer__description {
-  width: 288px;
-  height: 105px;
-  padding-top: 1.5rem;
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
-  padding-left: 1rem;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #767e86;
-}
-.special-offer__img {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-  width: 288px;
-  height: 320px;
-  border-radius: 16px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 119, 87, 0.5),
-      rgba(255, 119, 87, 0.1)
-    ),
-    url(../images/lisbon.jpg);
-  object-fit: cover;
-}
-.special-offer__info {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-  background-color: #fff8f1;
-  border-radius: 16px 16px 0 0;
-  height: fit-content;
 }
 
 .our-blog__info {
@@ -620,12 +575,7 @@ p {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 119, 87, 0.5),
-      rgba(255, 119, 87, 0.1)
-    ),
-    url(../images/berlin.jpg);
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/berlin.jpg);
   object-fit: cover;
 }
 .popular-destinations__text-over-image {
@@ -776,12 +726,7 @@ p {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 119, 87, 0.5),
-      rgba(255, 119, 87, 0.1)
-    ),
-    url(../images/rome.jpg);
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/rome.jpg);
   object-fit: cover;
 }
 
@@ -793,12 +738,7 @@ p {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 119, 87, 0.5),
-      rgba(255, 119, 87, 0.1)
-    ),
-    url(../images/paris.jpg);
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/paris.jpg);
   object-fit: cover;
 }
 
@@ -810,12 +750,7 @@ p {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 119, 87, 0.5),
-      rgba(255, 119, 87, 0.1)
-    ),
-    url(../images/paris.jpg);
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/paris.jpg);
   object-fit: cover;
 }
 
@@ -827,12 +762,7 @@ p {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 119, 87, 0.5),
-      rgba(255, 119, 87, 0.1)
-    ),
-    url(../images/budapest.jpg);
+  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/budapest.jpg);
   object-fit: cover;
 }
 
@@ -860,6 +790,88 @@ p {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    grid-area: 1/1/2/2;
+  }
+  .title__logo-text {
+    color: #ffffff;
+    min-height: 34.2px;
+    min-width: 186.77px;
+  }
+  .title__logo {
+    color: #ffffff;
+    width: 40.72px;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 2rem;
+  }
+  .nav-menu {
+    grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .login {
+    grid-area: 1/2/2/3;
+    visibility: visible;
+    justify-self: left;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .login li {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .menu-list {
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1/2/2;
+    visibility: visible;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  .menu-list li {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  .nav-menu__burger {
+    visibility: hidden;
+  }
+  body main {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
+    /* Inside auto layout */
+    background-position: center top -1400px;
+    object-fit: cover;
+  }
+}
+.booking-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
