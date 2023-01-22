@@ -129,6 +129,12 @@ header {
   margin-bottom: 1rem;
 }
 
+.title-separation {
+  border-top: 2px solid #ff7757;
+  max-width: 227px;
+  margin-left: 1rem;
+}
+
 .trip-planners__info {
   width: 288px;
   height: 105px;

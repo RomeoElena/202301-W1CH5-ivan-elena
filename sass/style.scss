@@ -20,8 +20,7 @@
   margin: 0;
   padding: 0;
 }
-// @mixin section-description {
-// }
+
 @mixin section-description {
   width: 288px;
   height: 105px;
@@ -167,6 +166,11 @@ header {
   @include section-titles();
 }
 
+.title-separation {
+  border-top: 2px solid $primary-color;
+  max-width: 227px;
+  margin-left: 1rem;
+}
 .trip-planners__info {
   @include section-description();
 }
