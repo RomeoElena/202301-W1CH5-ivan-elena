@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <section class="header-div">
+  <main class="header-div">
     <header class="header">
       <h1 class="title">
         <img src="images/logo-white.svg" alt="" class="title__logo">
@@ -21,10 +21,10 @@
         <img src="images/Vectorburger-white.svg" alt="nav-menu">
       </nav>
     </header>
-    <main class="booking-form">
+    <section class="booking-form">
       <h2 class="booking-form__title">Start your unforgettable journey with us</h2>
       <p class="booking-form__info">The best travel for your journey begins now</p>
-      <section class="booking-form__fields"></section>
+
       <form action="#" class="booking-form__form">
         <ul>
           <li><label for="destination">Destination</label>
@@ -34,18 +34,20 @@
             <input type="text" name="person" id="person" class="booking-form__input-text" placeholder="2">
           </li>
           <li><label for="checkin">Check-in</label>
-            <input type="text" name="checkin" id="checkin" class="booking-form__input-text">
+            <input type="text" name="checkin" id="checkin" class="booking-form__input-text"
+              placeholder="Sun, 17th Sep 2020">
           </li>
-          placeholder="Sun, 17th Sep 2020">
-          <label for="checkout">Check-out</label>
-          <input type="text" name="checkout" id="checkout" class="booking-form__input-text"
-            placeholder="Tue, 17th Oct 2020">
-        </ul>
-        <input type="button" value="Book now" class="booking-form__button-submit">
 
+          <li><label for="checkout">Check-out</label><input type="text" name="checkout" id="checkout"
+              class="booking-form__input-text" placeholder="Tue, 17th Oct 2020"></li>
+
+          <input type="submit" value="Book now" class="booking-form__button-submit">
+
+        </ul>
       </form>
-    </main>
-  </section>
+
+    </section>
+  </main>
   <section class="popular-destinations">
     <h2 class="popular-destinations__title">Popular destinations</h2>
     <div class="title-separation"></div>
