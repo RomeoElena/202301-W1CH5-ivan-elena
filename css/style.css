@@ -83,8 +83,6 @@ body main {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 16px 100px;
-  width: 320px;
-  height: 1210px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
   /* Inside auto layout */
   flex: none;
@@ -221,7 +219,14 @@ h2 {
   color: #172432;
 }
 
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 .booking-form__title {
+  margin: 0;
   font-style: normal;
   font-weight: 300;
   font-size: 40px;
@@ -251,7 +256,6 @@ h2 {
   border-radius: 16px;
 }
 .booking-form__button-submit {
-  width: 100%;
   margin-top: 1rem;
   display: flex;
   flex-direction: row;
