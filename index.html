@@ -27,19 +27,19 @@
 
       <form action="#" class="booking-form__form">
         <ul>
-          <li><label for="destination">Destination</label>
+          <li><label for="destination" class="booking-form__label">Destination</label>
             <input type="text" name="destination" id="destination" class="booking-form__input-text" placeholder="Dubai">
           </li>
-          <li><label for="person">Person</label>
+          <li><label for="person" class="booking-form__label">Person</label>
             <input type="text" name="person" id="person" class="booking-form__input-text" placeholder="2">
           </li>
-          <li><label for="checkin">Check-in</label>
+          <li><label for="checkin" class="booking-form__label">Check-in</label>
             <input type="text" name="checkin" id="checkin" class="booking-form__input-text"
               placeholder="Sun, 17th Sep 2020">
           </li>
 
-          <li><label for="checkout">Check-out</label><input type="text" name="checkout" id="checkout"
-              class="booking-form__input-text" placeholder="Tue, 17th Oct 2020"></li>
+          <li><label for="checkout" class="booking-form__label">Check-out</label><input type="text" name="checkout"
+              id="checkout" class="booking-form__input-text" placeholder="Tue, 17th Oct 2020"></li>
 
           <input type="submit" value="Book now" class="booking-form__button-submit">
 
@@ -59,8 +59,8 @@
       <p class="popular-destinations__image-location">Berlin, Germany</p>
     </div>
     <nav class="popular-destinations__nav">
-      <a href="#" class="popular-destinations__button"></a>
-      <a href="#" class="popular-destinations__button"></a>
+      <a href="#" class="popular-destinations__previous-button">&#60;</a>
+      <a href="#" class="popular-destinations__next-button">&#62;</a>
     </nav>
   </section>
   <section class="special-offer">
@@ -106,6 +106,7 @@
 
   <section class="trip-planners">
     <h2 class="trip-planners__title">Trip Planners</h2>
+    <div class="title-separation"></div>
     <h4 class="trip-planners__info">20 years from now you will be more disappointed by the things that you didn’t do.
       Stop regretting and start travelling,
       start throwing off the bowlines.</h4>
@@ -163,6 +164,7 @@
   </section>
   <section class="travelers-experiences">
     <h2 class="travelers-experiences__title">Traveler's Experiences</h2>
+    <div class="title-separation"></div>
     <h4 class="travelers-experiences__info">Here some awesome feedback from our travelers</h4>
     <div class="testiomony">
       <img src="images/johndoe.png" alt="" class="testimony_user-image">
@@ -181,8 +183,9 @@
   </section>
   <section class="newsletter">
     <h2 class="newsletter__title">Our Newsletter</h2>
+
     <form action="#" class="newsletter-form">
-      <label for="email" name="email">Email</label>
+      <label for="email">Email</label>
       <input type="text" name="email" id="email" placeholder="Enter your email" class="newsletter-form__email">
       <input type="button" value="Suscribe" class="newsletter-form__button">Suscribe
     </form>
