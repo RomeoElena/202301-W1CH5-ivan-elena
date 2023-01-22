@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Rubik:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&family=Rubik:wght@300;400;500;700&display=swap");
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -100,7 +100,7 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  padding: 2rem;
 }
 
 .title {
@@ -124,6 +124,7 @@ header {
   font-size: 40px;
   line-height: 53px;
   color: #172432;
+  margin-top: 5rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
 }
@@ -165,6 +166,7 @@ header {
 }
 .booking-form__button-submit {
   width: 100%;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -174,19 +176,38 @@ header {
   font-weight: 400;
   font-size: 36px;
   line-height: 48px;
-  /* identical to box height */
   color: #ffffff;
   gap: 12px;
   width: 288px;
   height: 128px;
   background: #ff7757;
   border-radius: 0px 0px 16px 16px;
+  border: none;
 }
 .booking-form__input-text {
   appearance: none;
   outline: none;
   border: none;
   border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+}
+.booking-form__label {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  opacity: 90%;
+  color: #767e86;
+}
+.booking-form__input-text::placeholder {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #172432;
 }
 
 .booking-form__form {
@@ -195,14 +216,14 @@ header {
   gap: 0px;
 }
 .booking-form__form ul {
+  width: 288px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
+  padding-top: 1rem;
+  padding-left: 0;
   gap: 60px;
-  width: 288px;
-  height: 595px;
   background: #ffffff;
   border-radius: 16px;
 }
