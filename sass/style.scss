@@ -55,6 +55,40 @@
   object-fit: cover;
 }
 
+@mixin previous-button {
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 20px;
+  color: white;
+  gap: 4px;
+  width: 60px;
+  height: 66px;
+  background-color: $secondary-color;
+
+  border-radius: 12px;
+}
+
+@mixin next-button {
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 20px;
+  color: white;
+  gap: 4px;
+  width: 60px;
+  height: 66px;
+  background-color: $primary-color;
+
+  border-radius: 12px;
+}
+
 $primary-color: #ff7757;
 $primary-color-soft: #ffd2c7;
 
@@ -307,6 +341,19 @@ h2 {
   }
   &__image {
     @include img-format();
+  }
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem;
+  }
+
+  &__previous-button {
+    @include previous-button();
+  }
+
+  &__next-button {
+    @include next-button();
   }
 }
 

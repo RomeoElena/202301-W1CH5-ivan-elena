@@ -271,6 +271,41 @@ h2 {
   background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(anthony-reungere-sjUufQqEnHI-unsplash.jpg);
   object-fit: cover;
 }
+.popular-destinations__nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 3rem;
+}
+.popular-destinations__previous-button {
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 20px;
+  color: white;
+  gap: 4px;
+  width: 60px;
+  height: 66px;
+  background-color: #331811;
+  border-radius: 12px;
+}
+.popular-destinations__next-button {
+  font-size: 2rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 28px 20px;
+  color: white;
+  gap: 4px;
+  width: 60px;
+  height: 66px;
+  background-color: #ff7757;
+  border-radius: 12px;
+}
 
 .title-separation {
   border-top: 2px solid #ff7757;
