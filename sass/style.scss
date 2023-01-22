@@ -465,6 +465,7 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 1rem;
   &__title {
     margin: 0;
     font-style: normal;
@@ -540,7 +541,7 @@ p {
     line-height: 19px;
     color: #172432;
   }
-  .booking-form__form {
+  &__form {
     display: flex;
     flex-direction: column;
     gap: 0px;
@@ -647,7 +648,8 @@ p {
 
   &__location-icon {
     width: 16.88px;
-    color: #ffffff;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(140deg)
+      brightness(150%) contrast(100%);
   }
   &__image-location {
     width: 208px;
@@ -853,18 +855,77 @@ p {
     main {
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url(../images/background.jpg);
-      // scale: crop;
-
-      /* Inside auto layout */
 
       background-position: center top -1400px;
       object-fit: cover;
     }
   }
-}
-.booking-form {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    &__form {
+      display: flex;
+      flex-direction: row;
+      gap: 0px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 1205px;
+        height: 216px;
+
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0rem;
+        padding-left: 0;
+        gap: 60px;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-items: space-between;
+          align-items: flex-start;
+          margin-top: 0;
+          padding-top: 0;
+          gap: 0.5rem;
+          // padding-eft: 1rem;
+        }
+        li:last-child {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 60px 30px;
+
+          gap: 12px;
+          margin-top: 0;
+
+          width: 190px;
+          height: 216px;
+
+          font-family: "Playfair Display";
+          font-style: normal;
+          font-weight: 400;
+          overflow-wrap: break-word;
+          // line-height: 48px;
+          color: #ffffff;
+
+          background: #ff7757;
+          border-radius: 0px 20px 20px 0px;
+          border: none;
+          .booking-form__button-submit {
+            margin-top: 0;
+            padding-top: 0;
+            font-size: 36px;
+            line-height: 48px;
+            width: 130px;
+            white-space: normal;
+          }
+        }
+      }
+    }
+  }
 }
