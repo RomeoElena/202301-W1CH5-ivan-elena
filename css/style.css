@@ -83,7 +83,8 @@ body main {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 16px 100px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/background.jpg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/background.jpg);
   /* Inside auto layout */
   flex: none;
   order: 0;
@@ -126,6 +127,29 @@ h2 {
   width: 24.36px;
 }
 
+.popular-destinations__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trip-planners__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
 .trip-planners__info {
   width: 288px;
   height: 105px;
@@ -139,6 +163,14 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
+}
+.trip-planners__trips {
+  display: flex;
+  align-items: center;
+  background-color: #ff7757;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px;
 }
 
 .travelers-experiences__info {
@@ -154,15 +186,6 @@ h2 {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
-}
-
-.trip-planners__all-trips {
-  display: flex;
-  align-items: center;
-  background-color: #ff7757;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px;
 }
 
 .special-offer__description {
@@ -187,7 +210,12 @@ h2 {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/lisbon.jpg);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 119, 87, 0.5),
+      rgba(255, 119, 87, 0.1)
+    ),
+    url(../images/lisbon.jpg);
   object-fit: cover;
 }
 .special-offer__info {
@@ -592,7 +620,12 @@ p {
   width: 288px;
   height: 320px;
   border-radius: 16px;
-  background: linear-gradient(0deg, rgba(255, 119, 87, 0.5), rgba(255, 119, 87, 0.1)), url(../images/berlin.jpg);
+  background: linear-gradient(
+      0deg,
+      rgba(255, 119, 87, 0.5),
+      rgba(255, 119, 87, 0.1)
+    ),
+    url(../images/berlin.jpg);
   object-fit: cover;
 }
 .popular-destinations__text-over-image {
@@ -669,21 +702,6 @@ p {
   margin-left: 1rem;
 }
 
-.trip-planners__info {
-  width: 288px;
-  height: 105px;
-  padding-top: 1.5rem;
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
-  padding-left: 1rem;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #767e86;
-}
-
 .travelers-experiences__info {
   width: 288px;
   height: 105px;
@@ -748,6 +766,100 @@ p {
   font-size: 28px;
   line-height: 37px;
   color: #172432;
+}
+
+.city1__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 119, 87, 0.5),
+      rgba(255, 119, 87, 0.1)
+    ),
+    url(../images/rome.jpg);
+  object-fit: cover;
+}
+
+.city2__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 119, 87, 0.5),
+      rgba(255, 119, 87, 0.1)
+    ),
+    url(../images/paris.jpg);
+  object-fit: cover;
+}
+
+.city3__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 119, 87, 0.5),
+      rgba(255, 119, 87, 0.1)
+    ),
+    url(../images/paris.jpg);
+  object-fit: cover;
+}
+
+.city4__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 288px;
+  height: 320px;
+  border-radius: 16px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 119, 87, 0.5),
+      rgba(255, 119, 87, 0.1)
+    ),
+    url(../images/budapest.jpg);
+  object-fit: cover;
+}
+
+.travelers-experiences__title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+  margin-top: 5rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.travelers-experiences__info {
+  width: 288px;
+  height: 105px;
+  padding-top: 1.5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 1rem;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
 }
 
 /*# sourceMappingURL=style.css.map */
